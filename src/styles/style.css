@@ -1,0 +1,117 @@
+@import "reset.css";
+
+.row > * {
+  padding: 0;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+/* responsive */
+/* >md  */
+@media only screen and (max-width: 576px) {
+  .bg-raduis {
+    border-radius: 25rem 25rem 0 0 !important;
+    width: 100% !important;
+  }
+}
+/*  < lg  */
+@media only screen and (min-width: 992px) {
+  .btn-text {
+    padding: 0.75rem 1.5rem !important;
+    font-size: 1.75rem !important;
+  }
+}
+/* >lg  */
+@media only screen and (max-width: 992px) {
+  .btn-text {
+    padding: 0.5rem 1rem !important;
+    font-size: 1.15rem !important;
+  }
+  .container {
+    max-width: 100% !important;
+  }
+  .note-img {
+    left: 75% !important;
+    border-radius: 2rem 2rem 2rem 0rem !important;
+  }
+}
+
+/* > xl */
+@media only screen and (min-width: 1300px) {
+  .bg-raduis {
+    width: 80% !important;
+    float: left;
+  }
+}
+
+.shadow-text {
+  text-shadow: 1px 3px 7px rgba(0, 0, 0, 0.35);
+}
+.des-text-color {
+  color: #5f5f5f !important;
+}
+.background-header-text {
+  position: relative;
+  width: max-content;
+}
+.background-header-text::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #fff6a3;
+  width: 100%;
+  height: 20%;
+}
+
+/* navbar styles */
+.nav-link {
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  color: #808080 !important;
+  margin: 0.5rem 1rem;
+  border-bottom: 3px solid #ff000000 !important;
+  transition: 0.5s !important;
+}
+.nav-link:hover {
+  border-bottom: 3px solid red !important;
+}
+.navbar-nav-scroll .active {
+  color: red !important;
+}
+
+/* header styles */
+.note-img {
+  top: 10%;
+  border-radius: 2rem 2rem 0rem 2rem;
+  left: 10%;
+  transform: translateX(-50%);
+}
+
+/* products style */
+.categories .action {
+  background-color: #ffc107 !important;
+  border: 1px solid #ffc107 !important;
+}
+
+.background-yellow {
+  position: relative;
+}
+
+.background-yellow::after {
+  content: "";
+  width: 100%;
+  height: 50%;
+  background-color: #fffde6;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  z-index: -1;
+}
+
+/* app mobile */
+.bg-raduis {
+  float: left;
+}
